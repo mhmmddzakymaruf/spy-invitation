@@ -39,7 +39,7 @@ function typeText(text, elementId) {
 
 function generateQRCode() {
     let qrContainer = document.getElementById("qrcode");
-    let qrContent = "https://maps.app.goo.gl/your-location-link";  // Ganti dengan link acara
+    let qrContent = "https://maps.app.goo.gl/uKc9brVjDmLeHUMXA";  // Ganti dengan link acara
 
     // Hapus QR Code sebelumnya jika ada
     qrContainer.innerHTML = "";
