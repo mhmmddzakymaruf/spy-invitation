@@ -1,0 +1,53 @@
+body {
+    font-family: 'Courier New', monospace;
+    background-color: black;
+    color: #00ff00;
+    text-align: center;
+    padding: 50px;
+}
+
+.hidden {
+    display: none;
+}
+
+#login-screen {
+    margin-top: 100px;
+}
+
+input {
+    padding: 10px;
+    border: 2px solid #00ff00;
+    background: black;
+    color: #00ff00;
+}
+
+button {
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #00ff00;
+    border: none;
+    cursor: pointer;
+}
+
+#error-message {
+    color: red;
+    margin-top: 10px;
+}
+
+#content {
+    animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Animasi QR Code */
+#qrcode {
+    opacity: 0;
+    transition: opacity 2s ease-in-out;
+}
+.show {
+    opacity: 1;
+}

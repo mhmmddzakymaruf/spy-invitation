@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mission Invitation</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+</head>
+<body>
+
+    <div id="login-screen">
+        <h1>🔒 Masukkan Kode Akses</h1>
+        <input type="password" id="access-code" placeholder="Kode Rahasia">
+        <button onclick="checkAccess()">Masuk</button>
+        <p id="error-message"></p>
+    </div>
+
+    <div id="content" class="hidden">
+        <h1>🕵️ Misi Rahasia</h1>
+        <p id="typing-effect"></p>
+        <p><strong>Lokasi:</strong> [Tempat Acara]</p>
+        <p><strong>Waktu:</strong> [Jam & Tanggal]</p>
+        <p><strong>Dress Code:</strong> Agen Rahasia (Jas hitam, Kacamata, dll.)</p>
+        
+        <p><strong>Scan QR Code untuk informasi lebih lanjut:</strong></p>
+        <canvas id="qrcode"></canvas>
+        
+        <audio id="effect-sound" src="sound.mp3"></audio>
+        <audio id="qr-sound" src="qr-sound.mp3"></audio>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
